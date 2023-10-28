@@ -10,16 +10,16 @@ Bangkok housing data available in Kaggle challenge presents the data of each hou
 - The model of price prediction is built based on evaluating multiple models and regularizations that yield the best optimal score for its prediction capability
 - Steps are:
 - 1. Feature Engineering: Target encoding for labeling categorical data based on the weight of the target variable which is price and Numeric Encoding for labeling month built column
-     Target Encoder:
-     Pros: Easy to implement
-     Cons: Target leakage problem
-  2. Data Pre-processing: KNN Imputer for replacing the null values with features similarity among the defined neighbors and Standard Scaler for rescaling
-     KNN Imputer:
-     Pros: More accurate than median/median/mode imputation
-     Cons: High memory / computational RAM depleted
-  3. Model Building: Linear Regression and Polynomial Featured Linear Regression with degree2 to fit the data in a non-linear way
-  4. Regularization: Ridge, Lasso, and ElasticNet evaluation. Lasso yields the best score of all
-  5. Final model and evaluation: Polynomial Featured Linear Regression combined with Lasso regularization
+--   Target Encoder:
+--   Pros: Easy to implement
+--   Cons: Target leakage problem
+- 2. Data Pre-processing: KNN Imputer for replacing the null values with features similarity among the defined neighbors and Standard Scaler for rescaling
+--   KNN Imputer:
+--   Pros: More accurate than median/median/mode imputation
+--   Cons: High memory / computational RAM depleted
+- 3. Model Building: Linear Regression and Polynomial Featured Linear Regression with degree2 to fit the data in a non-linear way
+-  4. Regularization: Ridge, Lasso, and ElasticNet evaluation. Lasso yields the best score of all
+-  5. Final model and evaluation: Polynomial Featured Linear Regression combined with Lasso regularization
 
 ### Recommendation
 - Features selected as the predictors should be the one with high correlation coefficients such as district and subdistrict. Multiple features generate a better result than selecting only the most correlated x variables
