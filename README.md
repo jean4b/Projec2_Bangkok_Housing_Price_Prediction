@@ -12,13 +12,13 @@ Bangkok housing data available in the Kaggle challenge presents the data of each
   1. Feature Engineering: Target encoding for labeling categorical data based on the weight of the target variable which is price and Numeric Encoding for labeling month-built column. Target Encoder: Pros - Easy to implement. Cons - Target leakage problem
   2. Data Pre-processing: KNN Imputer for replacing the null values with features similarity among the defined neighbors and Standard Scaler for rescaling. KNN Imputers. Pros - More accurate than median/median/mode imputation. Cons - High memory / computational RAM depleted
   3. Model Building:
-     3.1 Linear Regression: The model is not underfitting nor overfitting, predicted values follow the normal distribution, and train r-square, and validated r-square scores are quite resemblanced.
-     3.2 Polynomial featured degrees2 Linear Regression: The model score is improved, the data is less varied
-  5. Regularization: Ridge, Lasso, and ElasticNet evaluation.
-     5.1 Ridge yields the most optimal score of all the regularization techniques compared
-     5.2 Lasso yields the second-best score
-     5.3 Elastic Net is the lowest performed regularization
-  7. Final model and evaluation: Polynomial Featured Linear Regression combined with Ridge regularization
+     1. Linear Regression: The model is not underfitting nor overfitting, predicted values follow the normal distribution, and train r-square, and validated r-square scores are quite resemblanced.
+     2. Polynomial featured degrees2 Linear Regression: The model score is improved, the data is less varied
+  4. Regularization: Ridge, Lasso, and ElasticNet evaluation.
+     1. Ridge yields the most optimal score of all the regularization techniques compared
+     2. Lasso yields the second-best score
+     3. Elastic Net is the lowest performed regularization
+  5. Final model and evaluation: Polynomial Featured Linear Regression combined with Ridge regularization
 
 ### Recommendation
 - Features selected as the predictors should be the ones with high correlation coefficients such as district and subdistrict. Multiple features generate a better result than selecting only the most correlated x variables
